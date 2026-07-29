@@ -7,6 +7,7 @@
 In France, students in *classes préparatoires* (two-year intensive post-baccalaureate programs preparing for the *grandes écoles* competitive exams) must complete a **TIPE** (*Travail d'Initiative Personnelle Encadré* — supervised personal research project). It is evaluated as a standalone oral exam (~15 min presentation + questions) during the national *concours* and accounts for a significant portion of the final score.
 
 The TIPE must be original, scientifically rigorous, and — for the MPI track (Mathematics, Physics, Computer Science) — rooted in at least one of those three disciplines. Each year a broad theme is announced; students must anchor their work to it.
+
 This project was presented as a TIPE oral examination in July 2026 at the IUT de Paris — Université Paris Cité, as part of the MPI* classes préparatoires competitive admissions (concours).
 
 ---
