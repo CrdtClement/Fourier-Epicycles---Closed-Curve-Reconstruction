@@ -53,8 +53,8 @@ Coefficient selection by modulus significantly improves quality for a fixed numb
 │   ├── presentation.pdf          # Oral presentation slides
 │   └── MCOT.pdf                  # Research objectives document (MCOT in French)
 ├── exemples/
-│   ├── exemple_saxo.gif
-│   └── exemple_pi.gif
+│   ├── exemple_pi.gifexemple_saxo.gif
+│   └── exemple_saxo.gif
 └── README.md
 ```
 
