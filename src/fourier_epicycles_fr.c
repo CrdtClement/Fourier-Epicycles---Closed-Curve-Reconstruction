@@ -1,6 +1,6 @@
 /*  
      ╔═══════════════════════════════════════════════════════════╗
-     ║ TIPE 2025-2026, MPI Lycée Louis Thuillier: Cardot Clément ║
+     ║ TIPE 2025-2026,MPI* Lycée Louis Thuillier: Cardot Clément ║
      ║  Objectif: Animation SDL d'épicycles à partir de Fourier  ║
      ╚═══════════════════════════════════════════════════════════╝
 
@@ -26,17 +26,17 @@
     - math.h pour les fonctions trigonométriques.
 
  ══════════════════════════ Modifications: ══════════════════════════
-    AVANT: ./Dessin 0 image.png 50 
+    AVANT: ./epicycles 0 image.png 50 
     
     L'objectif est donc de prendre seulement une image en argument, contenant le contour à tracer et de faire le choix de M automatiquement.
     L'approximation des intégrales pour le calcul des coefficients de Fourier oblige à respecter N > M (sinon c_{n+N} = c_n), donc je fixe M:=N/10.
     Plus possible de tracer les épicycles classiques.
 
-    MAINTENANT: ./Dessin image.png     => tracé avec M:=N/10
-                ./Dessin image.png M   => tracé avec M donné en paramètres
+    MAINTENANT: ./epicycles image.png     => tracé avec M:=N/10
+                ./epicycles image.png M   => tracé avec M donné en paramètres
 
  ═══════════════════════════ Compilation: ═══════════════════════════
-    gcc -o Dessin fourier_epicycles_fr.c lodepng.c -lSDL2 -lSDL2_ttf -lm && ./Dessin image.png
+    gcc -o epicycles fourier_epicycles_fr.c lodepng.c -lSDL2 -lSDL2_ttf -lm && ./Dessin image.png
 */
 
 
@@ -456,7 +456,7 @@ void afficher_titre(){
 
     printf(" ║");
     for(int i = 0; i < espace_g; i++){printf(" ");}
-    printf("║ TIPE 2025-2026, MPI* Lycée Louis Thuillier:Cardot Clément ║");
+    printf("║ TIPE 2025-2026,MPI* Lycée Louis Thuillier:Cardot Clément ║");
     for(int i = 0; i < espace_d; i++){printf(" ");}
     printf("║\n");
 
@@ -618,7 +618,7 @@ void main_loop(SDL_Renderer *ren, Coefficient *coeffs, int M, float SCALE) {
 */
 
 int main(int argc, char** argv){
-    bool csv = true; // Permet de choisir si on veut générer les fichiers csv ou non
+    bool csv = false; // Permet de choisir si on veut générer les fichiers csv ou non
     char buffer[200]; //Gerer l'affichage des espaces
 
     afficher_bord_haut();

@@ -1,6 +1,6 @@
 /*
      ╔═══════════════════════════════════════════════════════════╗
-     ║ TIPE 2025-2026, MPI Lycée Louis Thuillier: Cardot Clément ║
+     ║ TIPE 2025-2026,MPI* Lycée Louis Thuillier: Cardot Clément ║
      ║  Objective: SDL epicycle animation from Fourier series    ║
      ╚═══════════════════════════════════════════════════════════╝
 
@@ -390,7 +390,7 @@ void dessiner_chemin(SDL_Renderer *ren, Point_grille chemin[], int longueur) {
 }
 
 void afficher_texte(SDL_Renderer *ren, const char *texte, int x, int y, SDL_Color couleur, int taille) {
-    TTF_Font *font = TTF_OpenFont("arial.ttf", taille);
+    TTF_Font *font = TTF_OpenFont("src/arial.ttf", taille);
     if (!font) {
         printf("Erreur font : %s\n", TTF_GetError());
         return;
@@ -462,7 +462,7 @@ void print_title(){
 
     printf(" ║");
     for(int i = 0; i < space_l; i++){printf(" ");}
-    printf("║  TIPE 2025-2026, MPI* Lycée Louis Thuillier: Cardot Clément  ║");
+    printf("║ TIPE 2025-2026,MPI* Lycée Louis Thuillier: Cardot Clément ║");
     for(int i = 0; i < space_r; i++){printf(" ");}
     printf("║\n");
 
@@ -622,7 +622,7 @@ void main_loop(SDL_Renderer *ren, Coefficient *coeffs, int M, float SCALE) {
 */
 
 int main(int argc, char** argv){
-    bool csv = true; // toggle CSV file generation
+    bool csv = false; // toggle CSV file generation
     char buffer[200]; // used for formatted display lines
 
     print_top_border();
@@ -648,7 +648,7 @@ int main(int argc, char** argv){
     const char* image_file = argv[1];
 
     snprintf(buffer, sizeof(buffer), "=>  Step 1: Contour extraction from image %s", image_file);
-    print_line(buffer, TEXT_WIDTH+2); // +2 for the arrow character width
+    print_line(buffer, TEXT_WIDTH);
 
     unsigned int width, height;
     unsigned char* rgba = decoder_png_rgba(image_file, &width, &height);
@@ -706,7 +706,7 @@ int main(int argc, char** argv){
 
     print_empty_line();
     snprintf(buffer, sizeof(buffer), "=>  Step 2: Fourier coefficient computation (M=%d)", M);
-    print_line(buffer, TEXT_WIDTH+2);
+    print_line(buffer, TEXT_WIDTH);
 
     Point_parametrique* points = malloc(nb_points * sizeof(Point_parametrique));
     for (int i = 0; i < nb_points; i++){
