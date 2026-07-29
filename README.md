@@ -41,13 +41,14 @@ Coefficient selection by modulus significantly improves quality for a fixed numb
 ```
 .
 ├── src/
-│   ├── fourier_epicycles.c       # Main C program (contour + Fourier + SDL2)
+│   ├── fourier_epicycles.c       # Main C program in English (contour + Fourier + SDL2)
+│   ├── fourier_epicycles_fr.c    # Main C program in French (contour + Fourier + SDL2)
 │   ├── lodepng.h                 # LodePNG header (PNG decoder)
 │   ├── lodepng.c                 # LodePNG implementation
 │   └── plot_contour.py           # Python script for contour visualisation
 ├── docs/
 │   ├── presentation.pdf          # Oral presentation slides
-│   └── MCOT.pdf                  # Research objectives document (MCOT)
+│   └── MCOT.pdf                  # Research objectives document (MCOT in French)
 ├── examples/
 │   └── *.png                     # Sample input images
 └── README.md
