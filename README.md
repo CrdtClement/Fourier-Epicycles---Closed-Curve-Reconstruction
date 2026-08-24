@@ -8,7 +8,7 @@ In France, students in *classes préparatoires* (two-year intensive post-baccala
 
 The TIPE must be original, scientifically rigorous, and — for the MPI track (Mathematics, Physics, Computer Science) — rooted in at least one of those three disciplines. Each year a broad theme is announced; students must anchor their work to it.
 
-This project was presented as a TIPE oral examination in July 2026 at the IUT de Paris — Université Paris Cité, as part of the MPI* classes préparatoires competitive admissions (concours).
+This project was presented as a TIPE oral examination in July 2026 at the IUT de Paris — Université Paris Cité, as part of the MPI* classes préparatoires exams (concours).
 
 ---
 
